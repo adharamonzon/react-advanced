@@ -6,8 +6,10 @@ import { routes } from '../routes/routes';
 export const Navigation = () => {
 
   return (
-    <Suspense fallback={<span>Loading...</span>}>
+    <Suspense fallback={<span>Load</span>}>
+
       <BrowserRouter>
+
         <div className="main-layout">
           <nav>
             <img src={logo} alt="React logo"/>
@@ -29,10 +31,12 @@ export const Navigation = () => {
               <Route key={route.name} path={route.path} element={<route.Component/>} />
               ))
             }
-            <Route path="/*" element={<Navigate to='/lazy1' replace />} />   
+           {/*  <Route path="/*" element={<Navigate to={routes[0].to} replace />} /> */}   
          </Routes>
         </div>
+
       </BrowserRouter>
+      
     </Suspense>
   )
 };
