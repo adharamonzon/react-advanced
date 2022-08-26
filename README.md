@@ -11,6 +11,6 @@ Permite mostar un mensaje / loading mientras se cargan los lazy componentes. Cua
 
 Como propiedad hay que añadirle un fallback={} que contendrá el componente que queramos mostrar mientras se carga o se puede poenr dentro una etiqueta. por ejemplo *fallback={<span>Loading...</span>}*
 
-## Cambiar el nombre del chung
+## Cambiar el nombre del chunk
 En el método lazy donde se importa el componente hay que poner el siguiente comentario: 
   /* webpackChunkName:"Nombre que se le quiera poner al chunk" */ 
